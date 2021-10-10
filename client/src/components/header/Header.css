@@ -1,0 +1,41 @@
+.header{
+    width: 100%;
+    position:relative;
+    height:600px;
+    background-size:cover;
+}
+
+.header img{
+    width: 100%;
+    background-size:cover;
+    height:500px;
+}
+
+.banner-link{
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 21px;
+    width: 200px;
+    height:60px;
+    background-color:red;
+    color:white;
+    font-family: sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:2px;
+}
+.banner-text{
+    position:absolute;
+    top:65%;
+    left: 20%;
+    height: 100px;
+    font-family:sans-serif;
+    color: White;
+    font-weight: 400;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 43px;
+}

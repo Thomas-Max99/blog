@@ -1,0 +1,17 @@
+.footer{
+    /* background-color:hsla(0, 100%, 51%, 0.8); */
+    color:white;
+    height: 90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.social-network{
+    display:flex;
+    justify-content:space-between;
+    width: 100px;
+    height: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+}

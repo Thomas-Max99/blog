@@ -1,0 +1,37 @@
+.singlepost{
+    flex:9;
+}
+
+.prepostInfoTitle{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.postTitle{
+    font-size: 32px;
+    color:rgb(68, 65, 71);
+}
+.delete{
+    color:red;
+}
+.edit{
+    color:aqua;
+}
+.authorInfo{
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color:hsl(180, 4%, 25%);
+    font-weight: 300px;
+}
+.postDate{
+    color:#222;
+    margin-left: 30px;
+}
+.postDescription{
+    line-height: 26px;
+    font-size: 18px;
+    width:100%;
+    padding: 30px 30px;
+    text-align:justify;
+}

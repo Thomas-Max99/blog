@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: #333;
+    color: #222;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 4rem;
+    font-size: 1.2rem;
+    position:fixed;
+    top:0;
+    z-index:999;
+    margin-bottom: 100px;
+}
+
+.navbar-logo{
+    text-decoration:none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 3rem;
+    font-family: "Dancing Script",sans-serif;
+    margin-right: 30px;
+}
+
+.nav-links{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 5px;
+    list-style-type: none;
+}
+
+.nav-items{
+    list-style-type:none;
+}
+.nav-items:hover{
+    color: #faab34;
+}
+
+.nav-link{
+    text-decoration:none;
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #FF5733 ;
+}
+.nav-sign{
+    text-decoration:none;
+    background-color: #F19812 ;
+    color: #fff;
+    height: 60px;
+    padding: 10px 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+}
+
+.nav-sign:hover{
+    transform: skewX(-0.06turn);
+    background-color:#FF5733;
+}
+
+.nav-icon{
+    display:none;
+    font-size: 2rem;
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 900px){
+    nav{
+        position:relative;
+    }
+
+    .nav-links{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        width: 100%;
+        top:80px;
+        left: -100%;
+        transition: 0.5 all;
+        background-color: #333;
+        padding: 80px 8px;
+        line-height: 30px;
+    }
+    .navbar-logo{
+        text-decoration:none;
+        color: #fff;
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: "Dancing Script",sans-serif;
+        margin-right: 20px;
+    }
+    .nav-links.active{
+        left:0;
+    }
+    .nav-items{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .nav-icon{
+        display:flex;
+        color:#fff;
+    }
+    .nav-sign{
+        background-color: #F19812 ;
+        color: #fff;
+        height: 40px;
+        padding: 10px 30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius: 10px;
+    }
+}
+
+
