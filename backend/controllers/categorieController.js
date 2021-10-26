@@ -4,7 +4,7 @@ import errorHandler from '../utils/dbErrorHandler.js';
 const createCategorie= async(req,res)=>{
     try{
         const newPost= await Categorie.create(req.body);
-        res.status(500).json({
+        res.status(200).json({
             status:'success',
             message:'successfully created!'
         })
